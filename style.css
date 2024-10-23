@@ -24,17 +24,44 @@ h1{
 header{
     font-family: "Roboto", sans-serif;
    width: 100%;
+   background-color: black;
+   margin-top: 0px;
+   margin-bottom: 30px;
+
 }
-.presentaciones{
+#presentaciones{
     font-family: "Roboto", sans-serif;
-    margin-bottom: 40px;
-    margin-top: 40px;
     margin-left: 550px;
-    margin-right: 50px;
+    margin-right: 40px;
 
 
 
 
+
+
+
+}
+
+#borde{
+    background-color: currentColor;
+    display: block;
+    flex: 1;
+    height: 2px;
+    opacity: .1;
+    font-weight: inherit;
+    font-weight: bolder;
+    box-sizing: border-box;
+    font-weight: bold;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 20px;
+    line-height: 32px;
+   
+
+    
+
+
+    
 }
 #texto{
     font-family: "Roboto", sans-serif;
@@ -47,8 +74,8 @@ header{
 }
 #hola{
     font-family: "Roboto", sans-serif;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 90px;
     margin-left: 600px;
     margin-right: 50px;
 
@@ -72,6 +99,25 @@ nav{
     color: #000;
 }
 
+.lol{
+    width: 220px;
+    height: 120px;
+    margin-right: 40px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+.figuras{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 300px;
+    height: 300px;
+
+ 
+
+}
+
 footer{
     background-color: gray;
     font-family: "Roboto", sans-serif;
@@ -86,3 +132,4 @@ footer{
     margin-top: 20px;
 
 }
+
