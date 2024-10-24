@@ -144,8 +144,40 @@ footer{
 .nosotros{
     font-family: "Roboto", sans-serif;
     font-size: x-large;
-    margin-top: 20px;
+    list-style: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 
+ 
+
+}
+#insta{
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+.ayuda{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+    font-size: xx-large;
+   
+}
+.data{
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+
+}
+#whatsapp{
+    color: white;
+    margin-top: 15px;
+    font-size: x-large;
 }
 
 
