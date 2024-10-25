@@ -7,6 +7,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
+
 
 #logo{
     width: 100%;
@@ -43,11 +45,12 @@ text-align: center;
     margin-bottom: 30px; 
 }
 #texto{
-    font-family: "Roboto", sans-serif;
+    font-family: "Sofia", cursive;
    text-align: center;
     font-size: large;
     height: 100px;
     padding-inline: 5%;  
+    margin-top: 5px;
 }
 #hola{
     font-family: "Roboto", sans-serif;
@@ -153,6 +156,7 @@ footer{
    align-items: center;
    margin-bottom: 10px;
    margin-top: 20px;
+   margin-left: 50px;
 }
 
 .ayuda{
