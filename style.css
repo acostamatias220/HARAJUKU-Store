@@ -17,6 +17,7 @@ h1{
   margin-left: 550px;
   margin-right: 50px;
 }
+
 header{
     font-family: "Roboto", sans-serif;
    width: 100%;
@@ -38,7 +39,8 @@ text-align: center;
     box-sizing: border-box;
     flex-grow: 1;
     flex-shrink: 1;
-    line-height: 32px;  
+    line-height: 32px; 
+    margin-bottom: 30px; 
 }
 #texto{
     font-family: "Roboto", sans-serif;
@@ -97,6 +99,7 @@ nav{
     font-weight: bolder;
     font-size: larger;
     font-family: "Roboto", sans-serif;
+    margin-top: 40px;
 }
 .efectivo{
     color: red;
@@ -112,12 +115,17 @@ footer{
     display: flex;
 }
 .nosotros{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
     font-family: "Roboto", sans-serif;
     font-size: x-large;
     list-style: none;
     color: white;
-    padding: 0;
-    margin-bottom: 20px;
+
+   
+   
+
 }
 #home{
     width: 80px;
