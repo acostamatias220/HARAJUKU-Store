@@ -122,12 +122,15 @@ align-items: center;
     .enviosinfo {
         font-size: medium;
         text-align: center;
-        display: flex;
     }
     .linea {
         height: 50px;
         width: 5px;
         margin: 5px 0;
+    }
+    #fondoenvios{
+        text-align: center;
+        align-items: center;
     }
 }
 
