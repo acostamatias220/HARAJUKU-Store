@@ -105,12 +105,12 @@ align-items: center;
         height: 200px;
     }
     #fondoenvios {
-        flex-direction: column;
+        display: flex;
         gap: 10px;
         margin-left: 0;
     }
     .enviosinfo {
-        font-size: large;
+        font-size: small;
     }
     #logoenvio {
         width: 50px;
@@ -129,7 +129,7 @@ align-items: center;
         width: 100%;
     }
     .enviosinfo {
-        font-size: medium;
+        font-size: small;
         text-align: center;
     }
     .linea {
@@ -295,7 +295,7 @@ text-align: center;
     }
 
     .separaciones {
-        flex-direction: column;
+        display: flex;
         margin: 10px 0;
     }
 
@@ -342,6 +342,7 @@ text-align: center;
 
 @media (max-width: 768px) {
     #franquiciasdiv{
+        display: flex;
         gap: 15px; 
         padding: 15px;
 
@@ -362,7 +363,7 @@ text-align: center;
 /* Media Queries para pantallas muy pequeñas */
 @media (max-width: 576px) {
     #franquiciasdiv{
-        flex-direction: column; 
+        display: flex;
         gap: 10px; 
         padding: 10px;
     }
