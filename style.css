@@ -27,6 +27,116 @@
    margin-top: 0px;
    margin-bottom: 30px;
 }
+#barraenvios{
+
+display: flex;
+align-items: center;
+
+}
+#fondoenvios{
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 50px;
+
+    
+}
+.enviosinfo{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: inline;
+
+}
+#logoenvio{
+    width: 70px;
+    height: 60px;
+    margin-left: 30px;
+}
+.linea{
+    width: 10px;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+/* Media queries para el header */
+@media (max-width: 1200px) {
+    #harajukustore {
+        margin-left: 300px;
+        margin-right: 20px;
+    }
+    #logo {
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    #harajukustore {
+        margin-left: 200px;
+        margin-right: 10px;
+    }
+    #logo {
+        height: 300px;
+    }
+    #fondoenvios {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #harajukustore {
+        margin-left: 100px;
+        margin-right: 10px;
+    }
+    #logo {
+        height: 200px;
+    }
+    #fondoenvios {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .enviosinfo {
+        font-size: large;
+    }
+    #logoenvio {
+        width: 50px;
+        height: 40px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #harajukustore {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    #logo {
+        height: 150px;
+    }
+    .enviosinfo {
+        font-size: medium;
+        text-align: center;
+    }
+    .linea {
+        height: 50px;
+        width: 5px;
+        margin: 5px 0;
+    }
+}
+
+/*Fin de media queries para el header */
+
+nav{
+    text-decoration: none;
+    color: #000;
+}
+/* De aca para abajo es todo main */
 #presentaciones{
     font-family: "Roboto", sans-serif;
 text-align: center;
@@ -60,7 +170,6 @@ text-align: center;
     font-family: "Roboto", sans-serif;
     text-align: center;
 }
-/* De aca para abajo todo main */
 
 .franquicias{
     list-style: none;
@@ -69,10 +178,6 @@ text-align: center;
     display: flex;
     margin-inline: 100px;
     font-size: larger;
-}
-nav{
-    text-decoration: none;
-    color: #000;
 }
 
 .lol{
@@ -148,6 +253,147 @@ nav{
     color: red;
     font-size: small;
 }
+/* Media queries para el main */
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 992px) {
+    .separaciones {
+        margin: 15px 0;
+    }
+
+    #texto {
+        font-size: medium;
+        height: 80px;
+        padding-inline: 7%;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .borde {
+        margin: 0 5px;
+    }
+
+    .separaciones {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    #texto {
+        font-size: medium;
+        height: auto; 
+        padding-inline: 10%;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .borde {
+        margin: 0 2px;
+    }
+
+    #texto {
+        font-size: small;
+        padding-inline: 12%;
+        height: auto;
+    }
+}
+@media (max-width: 992px) {
+    .franquicias {
+        margin-inline: 50px;
+        font-size: medium;
+    }
+    .lol {
+        width: 180px;
+        height: 100px;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .franquicias {
+        flex-direction: column; 
+        align-items: center;
+        margin-inline: 20px;
+    }
+    .lol {
+        width: 160px;
+        height: 90px;
+        margin: 10px 0;
+    }
+    .nombres {
+        text-align: center;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .franquicias {
+        margin-inline: 10px;
+        font-size: small;
+    }
+    .lol {
+        width: 140px;
+        height: 80px;
+        margin: 5px 0;
+    }
+    #hola {
+        font-size: small;
+    }
+}
+@media (max-width: 992px) {
+    .tarjetas {
+        min-width: 180px; 
+        padding: 15px; 
+    }
+    .contenedorF {
+        gap: 15px;
+    }
+    .botoncarrito {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedorF {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+    .tarjetas {
+        width: 90%; 
+        min-width: auto;
+        margin: 10px 0;
+    }
+    .botoncarrito {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas  */
+@media (max-width: 576px) {
+    .contenedorF {
+        gap: 5px;
+        margin: 15px 0;
+    }
+    .tarjetas {
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .botoncarrito {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+    .efectivo {
+        font-size: x-small;
+    }
+}
 
 /* De aca para abajo todo footer */
 #indexfooter{
@@ -160,15 +406,11 @@ nav{
 .nosotros{
     margin-top: 40px;
     margin-bottom: 40px;
-    
+
     font-family: "Roboto", sans-serif;
     font-size: x-large;
     list-style: none;
     color: white;
-
-   
-   
-
 }
 #home{
     width: 80px;
@@ -188,8 +430,6 @@ nav{
     margin: 0;
     display: flex;
     align-items: center;
-
-   
 }
 .cajasociales{
    display: flex;
@@ -210,6 +450,89 @@ nav{
     margin-right: 50px;
     margin-left: 50px;
     text-align: center;
+}
+/* media queries para el footer */
+@media (max-width: 992px) {
+    .nosotros {
+        font-size: large;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .ayuda {
+        font-size: x-large;
+    }
+
+    .data {
+        margin: 0 30px;
+    }
+    
+    .logosociales {
+        width: 35px;
+        height: 25px;
+    }
+    
+    #home {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+/* Media Queries para pantallas pequeñas  */
+@media (max-width: 768px) {
+    #indexfooter {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .cajasociales {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .data {
+        margin: 20px 0;
+    }
+
+    .nosotros, .infosociales {
+        font-size: medium;
+        text-align: center;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas  */
+@media (max-width: 576px) {
+    .nosotros {
+        font-size: medium;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ayuda {
+        font-size: large;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .data {
+        margin: 10px 0;
+        font-size: small;
+    }
+
+    .logosociales {
+        width: 30px;
+        height: 20px;
+    }
+
+    #home {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .infosociales {
+        font-size: small;
+    }
 }
 
 /* CSS DEL FORMULARIO */
