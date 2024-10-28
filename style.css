@@ -122,6 +122,7 @@ align-items: center;
     .enviosinfo {
         font-size: medium;
         text-align: center;
+        display: flex;
     }
     .linea {
         height: 50px;
