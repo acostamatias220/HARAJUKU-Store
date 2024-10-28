@@ -3,8 +3,16 @@
     
 }
 *{
-    box-sizing: 0
+    box-sizing: border-box
 }
+*{
+    padding: 0
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
@@ -118,6 +126,7 @@ align-items: center;
     }
     #logo {
         height: 150px;
+        width: 100%;
     }
     .enviosinfo {
         font-size: medium;
@@ -129,8 +138,10 @@ align-items: center;
         margin: 5px 0;
     }
     #fondoenvios{
-        text-align: center;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -183,13 +194,18 @@ text-align: center;
     margin-inline: 100px;
     font-size: larger;
 }
+#franquiciasdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
 
 .lol{
-    width: 220px;
-    height: 120px;
-    margin-right: 40px;
-    margin-left: 80px;
-    margin-bottom: 30px;
+    max-width: 200px;
+    height: auto;
 }
 .nombres{
     font-family: "Roboto", sans-serif;
@@ -303,29 +319,40 @@ text-align: center;
     }
 }
 @media (max-width: 992px) {
+    #franquiciasdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .lol {
+        max-width: 100px;
+        height: auto;
+    }
+
     .franquicias {
         margin-inline: 50px;
         font-size: medium;
     }
-    .lol {
-        width: 180px;
-        height: 100px;
-        margin-left: 40px;
-        margin-right: 20px;
-    }
+   
 }
 
 
 @media (max-width: 768px) {
+    #franquiciasdiv{
+        gap: 15px; 
+        padding: 15px;
+
+    }
     .franquicias {
         flex-direction: column; 
         align-items: center;
         margin-inline: 20px;
     }
     .lol {
-        width: 160px;
-        height: 90px;
-        margin: 10px 0;
+        max-width: 80px; 
     }
     .nombres {
         text-align: center;
@@ -334,14 +361,26 @@ text-align: center;
 
 /* Media Queries para pantallas muy pequeñas */
 @media (max-width: 576px) {
+    #franquiciasdiv{
+        flex-direction: column; 
+        gap: 10px; 
+        padding: 10px;
+    }
     .franquicias {
-        margin-inline: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        gap: 10px;
+        padding: 0 10px;
         font-size: small;
+        
     }
     .lol {
-        width: 140px;
-        height: 80px;
-        margin: 5px 0;
+        max-width: 60px; 
+        
     }
     #hola {
         font-size: small;
