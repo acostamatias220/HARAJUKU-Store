@@ -45,6 +45,19 @@ html, body {
 #linkpagar{
     color: black;
 }
+#botonpagar{
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 #barraenvios{
 
 display: flex;
@@ -653,4 +666,64 @@ text-align: center;
     color: white;
 }
 
+/* Pagina del pago */
 
+
+main{
+    font-size: larger;
+    font-weight: bold;
+}
+#contenedor {
+    background-color: rgba(128, 128, 128, 0.2); /* Gris claro y semitransparente */
+    padding: 20px; /* Espaciado interno */
+    width: 50%; /* Ajusta el ancho según lo necesario */
+    margin-left: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+   
+  }
+
+#informacion {
+    display: flex; 
+    gap: 40px; 
+
+  }
+
+#izquierdo label {
+    display: block;
+    margin-bottom: 5px; 
+  }
+
+  #izquierdo input {
+    display: block;
+    margin-bottom: 15px; 
+  }
+  #derecho label {
+    display: block;
+    margin-bottom: 5px; 
+  }
+
+  #derecho input {
+    display: block;
+    margin-bottom: 15px; 
+  }
+  #botones{
+    display: flex;
+    gap: 290px;
+    
+
+  }
+  #atras{
+    width: 50px;
+    height: 40px;
+    font-size: large;
+    cursor: pointer;
+
+  }
+  #continuar{
+    width: 90px;
+    height: 40px;
+    font-size: large;
+    background-color: rgb(55, 55, 162);
+    color: white;
+    cursor: pointer;
+  }

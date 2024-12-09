@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARAJUKU Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logos/rei.png" type="image/icon type" >
+</head>
+<body>
+    <header>
+        <header id="harajukuheader">
+
+            <!-- Logo/Banner de la pagina -->
+            <img src="logos/Logo.png" id="logo">
+    </header>
+    <main>
+        <div id="contenedor">
+            <h2>Informacion del pago</h2>
+        <div id="pago">
+            <label for="opciones">Seleccione un metodo de pago</label>
+            <br>
+            <select id="opciones" name="opciones">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+            <p>Numero de tarjeta</p>
+            <input type="text">
+            <br>
+            <label for="fecha-vencimiento">Fecha de vencimiento (MM/AA):</label>
+            <br>
+            <input
+              type="text"
+              id="fecha-vencimiento"
+              name="fecha-vencimiento"
+              maxlength="5"
+              placeholder="MM/AA"
+              pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+              required
+            />
+            <span id="error-msg" style="color: red; display: none;">Formato inválido: MM/AA</span>
+            
+            
+        </div>
+        <h2>Informacion de facturacion</h2>
+        <div id="informacion">
+            <div id="izquierdo">
+                <label id="nombre">Nombre</label>
+                <input type="text">
+                <label id="Apellido">Apellido</label>
+                <input type="text">
+                <label id="direccion">Direccion de facturacion</label>
+                <input type="text">
+                <label id="pais">Pais</label>
+                <select id="pais">
+                    <option value="pais">Argentina</option>
+                    <option value="pais">Otro...</option>
+                </select>
+                
+            
+            </div>
+            <div id="derecho">
+                <label id="localidad">Localidad</label>
+                <input type="text">
+                <label id="codigo">Codigo postal</label>
+                <input type="text">
+                <label id="telefono">Telefono</label>
+                <input type="number">
+               
+                
+                
+    
+            </div>
+            
+
+        </div>
+        <input type="checkbox">Guardar mi informacion de pago para la proxima vez
+        <div id="botones">
+            <button id="atras">Atras</button>
+            <button id="continuar">Continuar</button>
+        </div>
+        </div>
+        
+
+        
+    </main>
+    
+</body>
+</html>

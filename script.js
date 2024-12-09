@@ -1,20 +1,21 @@
 let carrito = [];
 
-
 document.querySelectorAll('.botoncarrito').forEach(boton => {
     boton.addEventListener('click', (e) => {
         
-        const producto = {
-            nombre: e.target.getAttribute('data-nombre'),
-            precio: parseFloat(e.target.getAttribute('data-precio'))
-        };
-        
-        
-        carrito.push(producto);
-        actualizarCarrito();
+        const confirmacion = confirm('¿Seguro que quieres añadir este producto al carrito?');
+        if (confirmacion) {
+            const producto = {
+                nombre: e.target.getAttribute('data-nombre'),
+                precio: parseFloat(e.target.getAttribute('data-precio'))
+            };
+            
+            
+            carrito.push(producto);
+            actualizarCarrito();
+        }
     });
 });
-
 
 function actualizarCarrito() {
     const listaCarrito = document.getElementById('lista-carrito');
