@@ -37,3 +37,15 @@ function actualizarCarrito() {
     totalCarrito.textContent = total;
 }
 
+
+// javascript para el formulario a partir de aca
+
+
+const formulario = document.getElementById('miFormulario');
+
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    alert('Datos enviados correctamente');
+    formulario.reset(); 
+});
+

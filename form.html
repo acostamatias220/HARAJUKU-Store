@@ -19,33 +19,30 @@
     <main>
         <h2 class="h2trabajo">Rellene los campos con sus datos</h2>
         <div id="divtrabajo">
-            <form action="">
+            <form id="miFormulario">
                 <div id="datospersonales">
-                    <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <br>
-                <p>Especifique su genero</p>
-                <select name="Genero">
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <p>Fecha de nacimiento</p>
-                <input type="date" placeholder="Fecha de Nacimiento">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <br>
+                    <p>Especifique su genero</p>
+                    <select name="Genero" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <p>Fecha de nacimiento</p>
+                    <input type="date" placeholder="Fecha de Nacimiento" required>
                 </div>
                 <br>
                 <div id="datoslaborales">
-                    <input type="email" placeholder="Email">
-                    <input type="number" placeholder="Numero Telefonico">
+                    <input type="email" placeholder="Email" required>
+                    <input type="number" placeholder="Numero Telefonico" required>
                 </div>
                 <div>
                     <input type="text" placeholder="Cuentanos sobre ti" id="info">
                 </div>
-
                 <input type="submit" value="Enviar" class="botones">
                 <input type="reset" value="Reiniciar" class="botones">
-    
-    
             </form>
         </div>
         
@@ -55,6 +52,6 @@
 
     </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
